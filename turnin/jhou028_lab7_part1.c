@@ -191,8 +191,8 @@ int main(void) {
         TimerFlag = 0;
 
         tick_elapsedTime += TIMER_PERIOD;
-        cntuInc_elapsedTime = tmpA0 ? cntuInc_elapsedTime + 1 : 0;
-        cntuDec_elapsedTime = tmpA1 ? cntuDec_elapsedTime + 1 : 0;
+        cntuInc_elapsedTime = tmpA0 ? cntuInc_elapsedTime + TIMER_PERIOD : 0;
+        cntuDec_elapsedTime = tmpA1 ? cntuDec_elapsedTime + TIMER_PERIOD : 0;
 
     }
     return 1;
